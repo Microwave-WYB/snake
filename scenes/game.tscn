@@ -1,0 +1,29 @@
+[gd_scene load_steps=2 format=3 uid="uid://byml44674joy5"]
+
+[ext_resource type="Script" path="res://scenes/game.gd" id="1_ywt3k"]
+
+[node name="Game" type="Node2D"]
+script = ExtResource("1_ywt3k")
+grid_size = 12
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="ScoreLabel" type="Label" parent="CanvasLayer"]
+offset_left = 20.0
+offset_top = 20.0
+offset_right = 60.0
+offset_bottom = 43.0
+
+[node name="ControlLabel" type="Label" parent="CanvasLayer"]
+offset_left = 20.0
+offset_top = 20.0
+offset_right = 243.0
+offset_bottom = 69.0
+text = "arrow keys: change direction
+space: start / accelerate"
+
+[node name="GameOverLabel" type="Label" parent="CanvasLayer"]
+offset_left = 20.0
+offset_top = 20.0
+offset_right = 60.0
+offset_bottom = 43.0
